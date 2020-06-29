@@ -33,6 +33,7 @@ DASH app begins here
 
 BS = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 app = dash.Dash(__name__, external_stylesheets=[BS])
+server=app.server
 
 
 app.title = "Security KPIs"
@@ -128,4 +129,4 @@ app.layout = html.Div(
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8051)
+    app.run_server()
