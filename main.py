@@ -6,32 +6,22 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-# Reading CSV file from the Jenkins
-"""
-file_df = pd.read_csv(
-    "https://jenkins.srv.da.nsn-rdnet.net/job/PMO/job/Pull_NDAC_GIT_issue_Data_Niraj_from_gitlabe2/lastSuccessfulBuild/artifact/DetailedGitIssuesReport.csv",
-    delimiter=",",
-    error_bad_lines=False,
-    skip_blank_lines=False,
-)
-"""
-file_df = pd.read_csv("DetailedGitIssuesReport_new.csv", delimiter=",", error_bad_lines=False, skip_blank_lines=False,)
+
+# Reading CSV file 
+file_df = pd.read_csv("Analytics_data.csv", delimiter=";", error_bad_lines=False, skip_blank_lines=False,)
 
 # Filter only security data from file
 security_data = file_df[file_df["Labels"].str.contains("security")]
 
 # Filter: Show only a year old data
-prev_year = pd.to_datetime((datetime.today() - timedelta(days=366)))
+# prev_year = pd.to_datetime((datetime.today() - timedelta(days=366)))
+today_date ="03-07-2020"
+start = datetime.strptime(today_date, "%d-%m-%Y") #string to date
+prev_year = pd.to_datetime(start - timedelta(days=366))
+
 security_data.loc[:, "IssueCreatedAt"] = pd.to_datetime(security_data["IssueCreatedAt"])
 security_data = security_data.loc[(security_data["IssueCreatedAt"] >= prev_year)]
 
-# Sanatize date format
-security_data.loc[:, "IssueCreatedAt"] = pd.to_datetime(security_data["IssueCreatedAt"], dayfirst=True, yearfirst=True)
-security_data.loc[:, "IssueClosedDate"] = pd.to_datetime(
-    security_data["IssueClosedDate"], dayfirst=False, yearfirst=True
-)
-security_data.loc[:, "IssueCreatedAt"] = security_data["IssueCreatedAt"].dt.strftime("%Y-%m-%d")
-security_data.loc[:, "IssueClosedDate"] = security_data["IssueClosedDate"].dt.strftime("%Y-%m-%d")
 
 # Replace Nan values of column "AssigneeName" with "No assignee"
 security_data["AssigneeName"] = security_data["AssigneeName"].fillna("No Assignee")
@@ -56,11 +46,19 @@ def business_days(start, end):
 
 
 # Convert string to pandas date time format for open issues dataframe
-df_open.loc[:, "Today_Date"] = pd.to_datetime("today")
+df_open.loc[:, "Today_Date"] = pd.to_datetime(today_date, format="%d-%m-%Y") # Can add current date 
 df_open.loc[:, "IssueCreatedAt"] = pd.to_datetime(df_open["IssueCreatedAt"])
 
 # Add a column in Open issues dataframe of name bussinessdays to calculate number of days between currentdate and Issue creation date
 df_open.loc[:, "bussinessDays"] = business_days(df_open["IssueCreatedAt"], df_open["Today_Date"])
+
+# Sanatize date format for closed issues
+df_close.loc[:, "IssueClosedDate"] = pd.to_datetime(
+    df_close["IssueClosedDate"], dayfirst=False, yearfirst=True
+)
+df_close.loc[:, "IssueCreatedAt"] = pd.to_datetime(df_close["IssueCreatedAt"], dayfirst=True, yearfirst=True)
+df_close.loc[:, "IssueCreatedAt"] = df_close["IssueCreatedAt"].dt.strftime("%d-%m-%Y")
+df_close.loc[:, "IssueClosedDate"] = df_close["IssueClosedDate"].dt.strftime("%Y-%m-%d")
 
 # Convert string to pandas date time format for closed issues dataframe
 df_close.loc[:, "IssueClosedDate"] = pd.to_datetime(df_close["IssueClosedDate"])
@@ -76,48 +74,48 @@ def openIssuesFilter():
         (
             (df["bussinessDays"].between(7, 14))
             & (
-                (df["Severity"] == "Prio-Major")
-                | (df["Severity"] == "Prio-Critical")
-                | (df["Severity"] == "Prio-Blocker")
+                (df["Severity"] == "Major")
+                | (df["Severity"] == "Critical")
+                | (df["Severity"] == "Blocker")
             )
         ),
         "Target",
     ] = "about_to_violate"
 
-    df.loc[((df["bussinessDays"].between(83, 90)) & (df["Severity"] == "Prio-Medium")), "Target",] = "about_to_violate"
+    df.loc[((df["bussinessDays"].between(83, 90)) & (df["Severity"] == "Medium")), "Target",] = "about_to_violate"
 
-    df.loc[((df["bussinessDays"].between(358, 365)) & (df["Severity"] == "Prio-Minor")), "Target",] = "about_to_violate"
+    df.loc[((df["bussinessDays"].between(358, 365)) & (df["Severity"] == "Minor")), "Target",] = "about_to_violate"
 
     df.loc[
         (
             (df["bussinessDays"] > 14)
             & (
-                (df["Severity"] == "Prio-Major")
-                | (df["Severity"] == "Prio-Critical")
-                | (df["Severity"] == "Prio-Blocker")
+                (df["Severity"] == "Major")
+                | (df["Severity"] == "Critical")
+                | (df["Severity"] == "Blocker")
             )
         ),
         "Target",
     ] = "violated"
 
-    df.loc[((df["bussinessDays"] > 90) & (df["Severity"] == "Prio-Medium")), "Target"] = "violated"
-    df.loc[((df["bussinessDays"] > 365) & (df["Severity"] == "Prio-Minor")), "Target"] = "violated"
+    df.loc[((df["bussinessDays"] > 90) & (df["Severity"] == "Medium")), "Target"] = "violated"
+    df.loc[((df["bussinessDays"] > 365) & (df["Severity"] == "Minor")), "Target"] = "violated"
 
     df.loc[
         (
             (df["bussinessDays"] < 7)
             & (
-                (df["Severity"] == "Prio-Major")
-                | (df["Severity"] == "Prio-Critical")
-                | (df["Severity"] == "Prio-Blocker")
+                (df["Severity"] == "Major")
+                | (df["Severity"] == "Critical")
+                | (df["Severity"] == "Blocker")
             )
         ),
         "Target",
     ] = "normal"
 
-    df.loc[((df["bussinessDays"] < 83) & (df["Severity"] == "Prio-Medium")), "Target"] = "normal"
+    df.loc[((df["bussinessDays"] < 83) & (df["Severity"] == "Medium")), "Target"] = "normal"
 
-    df.loc[((df["bussinessDays"] < 358) & (df["Severity"] == "Prio-Minor")), "Target"] = "normal"
+    df.loc[((df["bussinessDays"] < 358) & (df["Severity"] == "Minor")), "Target"] = "normal"
 
     return df
 
@@ -129,33 +127,33 @@ def closedIssuesFilter():
         (
             (df["days_to_KPI_target"] <= 14)
             & (
-                (df["Severity"] == "Prio-Major")
-                | (df["Severity"] == "Prio-Critical")
-                | (df["Severity"] == "Prio-Blocker")
+                (df["Severity"] == "Major")
+                | (df["Severity"] == "Critical")
+                | (df["Severity"] == "Blocker")
             )
         ),
         "Target",
     ] = "hit"
 
-    df.loc[((df["days_to_KPI_target"] <= 90) & (df["Severity"] == "Prio-Medium")), "Target"] = "hit"
+    df.loc[((df["days_to_KPI_target"] <= 90) & (df["Severity"] == "Medium")), "Target"] = "hit"
 
-    df.loc[((df["days_to_KPI_target"] <= 365) & (df["Severity"] == "Prio-Minor")), "Target"] = "hit"
+    df.loc[((df["days_to_KPI_target"] <= 365) & (df["Severity"] == "Minor")), "Target"] = "hit"
 
     df.loc[
         (
             (df["days_to_KPI_target"] > 14)
             & (
-                (df["Severity"] == "Prio-Major")
-                | (df["Severity"] == "Prio-Critical")
-                | (df["Severity"] == "Prio-Blocker")
+                (df["Severity"] == "Major")
+                | (df["Severity"] == "Critical")
+                | (df["Severity"] == "Blocker")
             )
         ),
         "Target",
     ] = "miss"
 
-    df.loc[((df["days_to_KPI_target"] > 90) & (df["Severity"] == "Prio-Medium")), "Target"] = "miss"
+    df.loc[((df["days_to_KPI_target"] > 90) & (df["Severity"] == "Medium")), "Target"] = "miss"
 
-    df.loc[((df["days_to_KPI_target"] > 365) & (df["Severity"] == "Prio-Minor")), "Target"] = "miss"
+    df.loc[((df["days_to_KPI_target"] > 365) & (df["Severity"] == "Minor")), "Target"] = "miss"
 
     return df
 
@@ -265,25 +263,25 @@ def openIssuesSeverityKPITargets():
     counts_fill = df["Target"].value_counts().to_dict()
     counts.update(counts_fill)
 
-    critical_within = df[(df["Target"] == "normal") & (df["Severity"] == "Prio-Critical")].shape[0]
-    blocker_within = df[(df["Target"] == "normal") & (df["Severity"] == "Prio-Blocker")].shape[0]
-    major_within = df[(df["Target"] == "normal") & (df["Severity"] == "Prio-Major")].shape[0]
-    medium_within = df[(df["Target"] == "normal") & (df["Severity"] == "Prio-Medium")].shape[0]
-    minor_within = df[(df["Target"] == "normal") & (df["Severity"] == "Prio-Minor")].shape[0]
+    critical_within = df[(df["Target"] == "normal") & (df["Severity"] == "Critical")].shape[0]
+    blocker_within = df[(df["Target"] == "normal") & (df["Severity"] == "Blocker")].shape[0]
+    major_within = df[(df["Target"] == "normal") & (df["Severity"] == "Major")].shape[0]
+    medium_within = df[(df["Target"] == "normal") & (df["Severity"] == "Medium")].shape[0]
+    minor_within = df[(df["Target"] == "normal") & (df["Severity"] == "Minor")].shape[0]
     none_within = df[(df["Target"] == "normal") & (df["Severity"] == "Not Assigned")].shape[0]
 
-    critical_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Prio-Critical")].shape[0]
-    blocker_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Prio-Blocker")].shape[0]
-    major_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Prio-Major")].shape[0]
-    medium_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Prio-Medium")].shape[0]
-    minor_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Prio-Minor")].shape[0]
+    critical_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Critical")].shape[0]
+    blocker_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Blocker")].shape[0]
+    major_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Major")].shape[0]
+    medium_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Medium")].shape[0]
+    minor_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Minor")].shape[0]
     none_miss = df[(df["Target"] == "violated") & (df["Severity"] == "Not Assigned")].shape[0]
 
-    critical_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Prio-Critical")].shape[0]
-    blocker_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Prio-Blocker")].shape[0]
-    major_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Prio-Major")].shape[0]
-    medium_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Prio-Medium")].shape[0]
-    minor_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Prio-Minor")].shape[0]
+    critical_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Critical")].shape[0]
+    blocker_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Blocker")].shape[0]
+    major_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Major")].shape[0]
+    medium_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Medium")].shape[0]
+    minor_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Minor")].shape[0]
     none_about_to = df[(df["Target"] == "about_to_violate") & (df["Severity"] == "Not Assigned")].shape[0]
 
     in_target = "Still in KPI targets ({})".format(counts["normal"])
@@ -311,23 +309,23 @@ def openIssuesSeverityKPITargets():
         about_to_violate_target,
     ]
     categories = [
-        "Prio-Critical ({})".format(critical_within),
-        "Prio-Blocker ({})".format(blocker_within),
-        "Prio-Major ({})".format(major_within),
-        "Prio-Medium ({})".format(medium_within),
-        "Prio-Minor ({})".format(minor_within),
+        "Critical ({})".format(critical_within),
+        "Blocker ({})".format(blocker_within),
+        "Major ({})".format(major_within),
+        "Medium ({})".format(medium_within),
+        "Minor ({})".format(minor_within),
         "Not Assigned ({})".format(none_within),
-        "Prio-Critical ({})".format(critical_miss),
-        "Prio-Blocker ({})".format(blocker_miss),
-        "Prio-Major ({})".format(major_miss),
-        "Prio-Medium ({})".format(medium_miss),
-        "Prio-Minor ({})".format(minor_miss),
+        "Critical ({})".format(critical_miss),
+        "Blocker ({})".format(blocker_miss),
+        "Major ({})".format(major_miss),
+        "Medium ({})".format(medium_miss),
+        "Minor ({})".format(minor_miss),
         "Not Assigned ({})".format(none_miss),
-        "Prio-Critical ({})".format(critical_about_to),
-        "Prio-Blocker ({})".format(blocker_about_to),
-        "Prio-Major ({})".format(major_about_to),
-        "Prio-Medium ({})".format(medium_about_to),
-        "Prio-Minor ({})".format(minor_about_to),
+        "Critical ({})".format(critical_about_to),
+        "Blocker ({})".format(blocker_about_to),
+        "Major ({})".format(major_about_to),
+        "Medium ({})".format(medium_about_to),
+        "Minor ({})".format(minor_about_to),
         "Not Assigned ({})".format(none_about_to),
     ]
 
@@ -426,19 +424,19 @@ def closedIssuesSeverityKPITargets():
     counts_fill = df["Target"].value_counts().to_dict()
     counts.update(counts_fill)
 
-    critical_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Prio-Critical")].shape[0]
+    critical_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Critical")].shape[0]
 
-    blocker_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Prio-Blocker")].shape[0]
-    major_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Prio-Major")].shape[0]
-    medium_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Prio-Medium")].shape[0]
-    minor_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Prio-Minor")].shape[0]
+    blocker_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Blocker")].shape[0]
+    major_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Major")].shape[0]
+    medium_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Medium")].shape[0]
+    minor_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Minor")].shape[0]
     none_hit = df[(df["Target"] == "hit") & (df["Severity"] == "Not Assigned")].shape[0]
 
-    critical_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Prio-Critical")].shape[0]
-    blocker_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Prio-Blocker")].shape[0]
-    major_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Prio-Major")].shape[0]
-    medium_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Prio-Medium")].shape[0]
-    minor_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Prio-Minor")].shape[0]
+    critical_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Critical")].shape[0]
+    blocker_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Blocker")].shape[0]
+    major_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Major")].shape[0]
+    medium_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Medium")].shape[0]
+    minor_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Minor")].shape[0]
     none_miss = df[(df["Target"] == "miss") & (df["Severity"] == "Not Assigned")].shape[0]
 
     in_target = "Fixed in KPI targets ({})".format(counts["hit"])
@@ -459,17 +457,17 @@ def closedIssuesSeverityKPITargets():
         missed_target,
     ]
     categories = [
-        "Prio-Critical ({})".format(critical_hit),
-        "Prio-Blocker ({})".format(blocker_hit),
-        "Prio-Major ({})".format(major_hit),
-        "Prio-Medium ({})".format(medium_hit),
-        "Prio-Minor ({})".format(minor_hit),
+        "Critical ({})".format(critical_hit),
+        "Blocker ({})".format(blocker_hit),
+        "Major ({})".format(major_hit),
+        "Medium ({})".format(medium_hit),
+        "Minor ({})".format(minor_hit),
         "Not Assigned ({})".format(none_hit),
-        "Prio-Critical ({})".format(critical_miss),
-        "Prio-Blocker ({})".format(blocker_miss),
-        "Prio-Major ({})".format(major_miss),
-        "Prio-Medium ({})".format(medium_miss),
-        "Prio-Minor ({})".format(minor_miss),
+        "Critical ({})".format(critical_miss),
+        "Blocker ({})".format(blocker_miss),
+        "Major ({})".format(major_miss),
+        "Medium ({})".format(medium_miss),
+        "Minor ({})".format(minor_miss),
         "Not Assigned ({})".format(none_miss),
     ]
 
@@ -502,20 +500,20 @@ def closedIssuesSeverityKPITargets():
 # Average Issue resolution time
 def averageIssueResolutionTime():
     df = df_close
-    avg_critical = df.loc[(df["Severity"] == "Prio-Critical", "days_to_KPI_target")].mean().round()
-    avg_blocker = df.loc[(df["Severity"] == "Prio-Blocker", "days_to_KPI_target")].mean().round()
-    avg_major = df.loc[(df["Severity"] == "Prio-Major", "days_to_KPI_target")].mean().round()
-    avg_medium = df.loc[(df["Severity"] == "Prio-Medium", "days_to_KPI_target")].mean()
-    avg_minor = df.loc[(df["Severity"] == "Prio-Minor", "days_to_KPI_target")].mean().round()
+    avg_critical = df.loc[(df["Severity"] == "Critical", "days_to_KPI_target")].mean().round()
+    avg_blocker = df.loc[(df["Severity"] == "Blocker", "days_to_KPI_target")].mean().round()
+    avg_major = df.loc[(df["Severity"] == "Major", "days_to_KPI_target")].mean().round()
+    avg_medium = df.loc[(df["Severity"] == "Medium", "days_to_KPI_target")].mean()
+    avg_minor = df.loc[(df["Severity"] == "Minor", "days_to_KPI_target")].mean().round()
     avg_none = df.loc[(df["Severity"] == "Not Assigned", "days_to_KPI_target")].mean().round()
     total_average = (df["days_to_KPI_target"].sum() / df_close["Severity"].value_counts().sum()).round()
 
     labels = [
-        "Prio-Critical",
-        "Prio-Blocker",
-        "Prio-Major",
-        "Prio-Medium",
-        "Prio-Minor",
+        "Critical",
+        "Blocker",
+        "Major",
+        "Medium",
+        "Minor",
         "Not Assigned",
         "Net average",
     ]
@@ -567,7 +565,7 @@ def averageIssueResolutionTime():
 def totalOpenIssues():
     df = df_open
     # Filter: Show only 3 months old data
-    last_3months = pd.to_datetime((datetime.today() - timedelta(days=95)))
+    last_3months = pd.to_datetime((datetime.today() - timedelta(days=92)))
     df.loc[:, "IssueCreatedAt"] = pd.to_datetime(df["IssueCreatedAt"])
     df = df.loc[(df["IssueCreatedAt"] >= last_3months)]
 

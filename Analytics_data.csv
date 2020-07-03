@@ -1,0 +1,279 @@
+Git Issue Id;Title;Labels;State;AssigneeName;IssueCreatedAt;IssueClosedDate;Severity
+4059;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;06/12/2019;2019-12-10;Major
+4060;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;06/12/2019;2019-12-10;Major
+4061;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;06/12/2019;2019-12-10;Major
+4065;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4066;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4067;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4068;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4069;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4070;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;06/12/2019;2019-12-17;Major
+4075;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;07/12/2019;2019-12-13;Major
+4076;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;07/12/2019;2019-12-13;Major
+4106;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;10/12/2019;2020-02-26;Major
+4119;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Anderson;12/12/2019;2020-03-13;Major
+4127;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-13;Major
+4128;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-17;Major
+4129;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-17;Major
+4130;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-17;Major
+4131;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-17;Major
+4132;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2019-12-17;Major
+4137;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2020-01-30;Major
+4139;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2020-01-10;Major
+4140;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2020-01-10;Major
+4142;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/12/2019;2020-01-10;Major
+4155;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;17/12/2019;2020-01-30;Major
+4156;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;17/12/2019;2020-01-10;Major
+4163;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;17/12/2019;2020-01-30;Major
+4164;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;17/12/2019;2020-01-10;Major
+4179;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;19/12/2019;2020-01-07;Major
+4180;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;19/12/2019;2020-01-17;Major
+4192;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;20/12/2019;2020-01-10;Minor
+4193;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;20/12/2019;2020-01-07;Major
+4198;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;20/12/2019;2020-01-10;Major
+4218;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;27/12/2019;2020-01-10;Major
+4236;Alpine: Issue;" [security;vams]"; closed;Adam;06/01/2020;2020-01-10;Major
+4266;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;09/01/2020;2020-01-09;Major
+4267;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;09/01/2020;2020-01-09;Major
+4268;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;09/01/2020;2020-04-14;Major
+4269;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;09/01/2020;2020-04-14;Major
+4270;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;09/01/2020;2020-04-14;Major
+4271;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;09/01/2020;2020-04-14;Major
+4273;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;09/01/2020;2020-01-16;Critical
+4280;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Michael;09/01/2020;NA;Major
+4281;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4282;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4283;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;10/01/2020;2020-03-24;Major
+4286;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4287;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4288;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4289;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Zenith;10/01/2020;2020-04-14;Major
+4296;Tenable.sc:Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/01/2020;2020-01-28;Major
+4299;Tenable.sc:Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/01/2020;2020-01-30;Major
+4430;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Zenith;27/01/2020;2020-04-14;Major
+4448;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Zenith;28/01/2020;NA;Major
+4460;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;29/01/2020;2020-03-13;Major
+4461;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;29/01/2020;2020-01-31;Major
+4464;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Zenith;29/01/2020;NA;Major
+4502;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;04/02/2020;2020-02-04;Major
+4503;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;04/02/2020;2020-02-10;Critical
+4511;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;05/02/2020;2020-02-11;Blocker
+4523;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;06/02/2020;2020-05-13;Major
+4524;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;06/02/2020;2020-02-13;Minor
+4559;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Zenith;09/02/2020;2020-02-10;Major
+4577;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Anderson;10/02/2020;NA;Major
+4582;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Anderson;10/02/2020;2020-03-27;Major
+4594;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;10/02/2020;2020-02-26;Major
+4595;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;10/02/2020;2020-02-26;Major
+4596;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;10/02/2020;2020-02-26;Major
+4604;Alpine: Issue;" [security;vams]"; closed;Jack;10/02/2020;2020-02-18;Blocker
+4626;ZAP: Issue;" [Auto_Created;Clair;security]"; opened;Jack;12/02/2020;NA;Major
+4639;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;13/02/2020;2020-03-10;Major
+4652;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;14/02/2020;2020-02-17;Major
+4661;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;14/02/2020;2020-04-15;Not Assigned
+4699;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;20/02/2020;2020-03-26;Major
+4700;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;20/02/2020;2020-04-07;Major
+4702;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Zenith;21/02/2020;2020-04-15;Major
+4719;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Zenith;25/02/2020;2020-04-14;Major
+4724;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Zenith;25/02/2020;2020-03-03;Major
+4725;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;25/02/2020;2020-04-14;Major
+4736;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;27/02/2020;2020-04-07;Major
+4755;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;03/03/2020;2020-03-13;Major
+4756;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;03/03/2020;2020-03-09;Major
+4757;terraform issue;" [security;vams]"; closed;Adam;03/03/2020;2020-03-09;Major
+4758;LibreSSL vulnerability - issue;" [security;vams]"; closed;Adam;03/03/2020;2020-03-09;Major
+4765;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;03/03/2020;2020-04-14;Major
+4776;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;04/03/2020;2020-03-05;Blocker
+4782;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-13;Major
+4783;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4784;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4785;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4786;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4787;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4788;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-09;Major
+4789;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Zenith;05/03/2020;2020-03-19;Major
+4792;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;05/03/2020;2020-03-13;Major
+4818;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Zenith;10/03/2020;2020-03-12;Major
+4820;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;10/03/2020;2020-03-16;Blocker
+4829;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;11/03/2020;2020-03-23;Major
+4830;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4831;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4832;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4833;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4834;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4835;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4836;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-11;Major
+4845;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/03/2020;2020-03-13;Major
+4847;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4848;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4849;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4850;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4851;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4852;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4853;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4854;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4855;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;12/03/2020;2020-03-13;Major
+4858;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4859;Kubernetes vulnerability ;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4860;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4861;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4862;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4863;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4864;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-04-02;Major
+4865;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4866;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4867;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4868;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4869;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4870;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4871;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4872;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4873;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4874;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4875;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4877;Alpine: Issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4878;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4879;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4880;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4881;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4882;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4883;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4884;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4885;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4886;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4887;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4888;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4889;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4890;Alpine: issue;" [security;vams]"; closed;Adam;13/03/2020;2020-03-13;Major
+4891;NMAP: issue;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4892;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4893;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4894;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-13;Major
+4895;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Jack;13/03/2020;NA;Major
+4896;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;John;13/03/2020;NA;Minor
+4897;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;John;13/03/2020;NA;Minor
+4898;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-04-23;Major
+4899;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-04-23;Major
+4900;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-04-23;Major
+4901;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4902;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4903;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4904;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4905;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4906;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4907;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4908;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4909;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/03/2020;2020-03-24;Major
+4910;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Michael;13/03/2020;NA;Major
+4911;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Michael;13/03/2020;NA;Major
+4912;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Michael;13/03/2020;NA;Major
+4916;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;15/03/2020;2020-04-14;Major
+4918;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;16/03/2020;2020-05-19;Major
+4919;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;16/03/2020;2020-03-24;Major
+4924;Tenable.sc:Issue;" [Auto_Created;Clair;security]"; closed;Jack;16/03/2020;2020-03-24;Major
+4955;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Alice;23/03/2020;NA;Minor
+4966;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;24/03/2020;2020-04-14;Major
+4972;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;26/03/2020;2020-04-15;Major
+4974;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;26/03/2020;2020-05-07;Major
+4978;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;26/03/2020;2020-05-26;Major
+4981;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;26/03/2020;2020-04-15;Major
+4993;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;27/03/2020;2020-04-14;Not Assigned
+4994;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;27/03/2020;2020-04-14;Not Assigned
+4995;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;27/03/2020;2020-04-02;Not Assigned
+4998;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;27/03/2020;2020-04-17;Not Assigned
+5001;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5002;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5003;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5004;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5005;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5006;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5007;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5008;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5009;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5010;terraform issue;" [security;vams]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5011;LibreSSL vulnerability - issue;" [security;vams]"; closed;Jack;27/03/2020;2020-03-30;Not Assigned
+5016;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;27/03/2020;2020-03-27;Not Assigned
+5018;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Alice;27/03/2020;NA;Major
+5020;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;NA;27/03/2020;2020-03-27;Not Assigned
+5031;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5032;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Anderson;27/03/2020;NA;Not Assigned
+5043;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;28/03/2020;2020-03-28;Major
+5044;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;28/03/2020;2020-03-28;Major
+5045;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Zenith;28/03/2020;NA;Major
+5046;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Zenith;28/03/2020;NA;Major
+5049;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Zenith;30/03/2020;2020-04-02;Major
+5057;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;30/03/2020;2020-05-11;Major
+5070;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Alice;02/04/2020;NA;Major
+5079;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;03/04/2020;2020-04-07;Not Assigned
+5097;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Zenith;07/04/2020;NA;Major
+5098;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Zenith;07/04/2020;NA;Major
+5123;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;09/04/2020;2020-04-14;Major
+5126;Kubernetes vulnerability ;" [security;vams]"; closed;Adam;09/04/2020;2020-04-15;Major
+5134;Alpine: Issue;" [security;vams]"; closed;Adam;12/04/2020;2020-04-14;Major
+5135;Alpine: Issue;" [security;vams]"; closed;Adam;12/04/2020;2020-04-12;Major
+5137;Alpine: Issue;" [security;vams]"; closed;Adam;12/04/2020;2020-04-19;Major
+5154;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Jack;14/04/2020;2020-04-24;Major
+5157;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Zenith;14/04/2020;NA;Major
+5158;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Zenith;14/04/2020;NA;Major
+5176;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;16/04/2020;2020-04-17;Major
+5177;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Adam;16/04/2020;NA;Major
+5178;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;16/04/2020;2020-04-22;Major
+5182;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;17/04/2020;2020-04-20;Major
+5183;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;17/04/2020;2020-04-17;Not Assigned
+5186;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;17/04/2020;2020-04-20;Not Assigned
+5189;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Jack;17/04/2020;NA;Not Assigned
+5216;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;NA;21/04/2020;NA;Major
+5230;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;John;23/04/2020;NA;Major
+5234;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;23/04/2020;2020-04-28;Minor
+5235;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;23/04/2020;2020-04-28;Blocker
+5240;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;23/04/2020;2020-05-08;Major
+5242;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Alice;24/04/2020;2020-04-27;Major
+5244;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Jack;24/04/2020;2020-04-28;Major
+5268;terraform issue;" [security;vams]"; closed;Anderson;28/04/2020;2020-05-13;Major
+5308;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;05/05/2020;2020-05-19;Major
+5310;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Jack;05/05/2020;NA;Minor
+5312;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;05/05/2020;2020-05-07;Major
+5313;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Zenith;06/05/2020;2020-05-12;Major
+5336;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Mike;08/05/2020;NA;Major
+5351;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Adam;08/05/2020;NA;Not Assigned
+5363;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Adam;11/05/2020;2020-05-11;Major
+5364;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;11/05/2020;2020-05-11;Major
+5377;Alpine: Issue;" [security;vams]"; closed;Jack;12/05/2020;2020-06-15;Major
+5393;ZAP: Issue;" [Auto_Created;Clair;security]"; opened;Zenith;13/05/2020;NA;Major
+5396;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Adam;13/05/2020;2020-05-26;Major
+5397;ZAP: Issue;" [Auto_Created;Clair;security]"; closed;Adam;13/05/2020;2020-05-26;Major
+5399;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;13/05/2020;2020-06-16;Major
+5404;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Trump;13/05/2020;2020-06-11;Major
+5405;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Trump;13/05/2020;2020-06-11;Major
+5406;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Adam;13/05/2020;2020-06-16;Major
+5421;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;14/05/2020;2020-06-04;Major
+5425;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Jack;15/05/2020;NA;Major
+5449;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Zenith;19/05/2020;NA;Major
+5456;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Trump;19/05/2020;2020-06-11;Major
+5457;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Trump;19/05/2020;2020-06-11;Major
+5460;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Adam;19/05/2020;2020-05-26;Major
+5473;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Jack;20/05/2020;NA;Minor
+5480;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Trump;21/05/2020;2020-06-11;Major
+5483;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Mike;22/05/2020;NA;Major
+5489;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Jack;22/05/2020;NA;Minor
+5490;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; closed;Jack;22/05/2020;2020-06-05;Not Assigned
+5508;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; closed;Trump;26/05/2020;2020-06-11;Major
+5525;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;NA;28/05/2020;2020-05-28;Major
+5527;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;John;28/05/2020;NA;Major
+5528;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;John;28/05/2020;NA;Major
+5532;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;28/05/2020;2020-05-29;Major
+5539;Nessus: Issue;" [Auto_Created;Clair;security]"; closed;Jack;29/05/2020;2020-06-01;Not Assigned
+5562;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;NA;02/06/2020;NA;Major
+5568;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Bob;02/06/2020;NA;Major
+5585;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Jack;03/06/2020;NA;Blocker
+5586;Nessus: Issue;" [Auto_Created;Clair;security]"; opened;Jack;03/06/2020;NA;Major
+5603;Kubernetes vulnerability ;" [security;vams]"; closed;Zenith;05/06/2020;2020-06-10;Not Assigned
+5618;Alpine: Issue;" [security;vams]"; closed;Jack;08/06/2020;2020-06-12;Major
+5639;NMAP: issue;" [Auto_Created;Clair;security]"; closed;Jack;10/06/2020;2020-06-10;Minor
+5648;Anchore: Issue;" [Anchore;Auto_Created;security]"; closed;Jack;10/06/2020;2020-06-11;Major
+5660;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Anderson;12/06/2020;NA;Minor
+5668;Anchore: Issue;" [Anchore;Auto_Created;security]"; opened;Alice;16/06/2020;NA;Major
+5673;Tenable.sc:Issue;" [Auto_Created;Clair;security]"; closed;Jack;16/06/2020;2020-06-18;Major
+5689;AutoCreated: Issue ;" [Auto_Created;Clair;security]"; opened;Adam;18/06/2020;NA;Major
+5706;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Adam;19/06/2020;NA;Major
+5717;AutoCreated: Issue ;" [APIFuzztest;Auto_Created;security]"; opened;Jack;22/06/2020;NA;Major

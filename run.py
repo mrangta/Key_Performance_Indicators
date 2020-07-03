@@ -36,7 +36,7 @@ app = dash.Dash(__name__, external_stylesheets=[BS])
 server=app.server
 
 
-app.title = "Security KPIs"
+app.title = "Key Performance Indicators"
 
 
 @app.callback(
@@ -129,4 +129,4 @@ app.layout = html.Div(
 
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(debug=True,port=8050)
