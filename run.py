@@ -71,7 +71,7 @@ body = dbc.Container(
 
 app.layout = html.Div(
     [
-        html.Div([html.H4("Security KPIs", className="text-center")]),
+        html.Div([html.H4("Key Performance Indicators", className="text-center")]),
         html.Div(
             [dcc.Graph(id="Open Issues vs Closed Issues", figure=issuesTimeChart())],
             className="shadow-sm p-2 bg-white rounded m-2",
